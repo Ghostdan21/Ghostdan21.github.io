@@ -1,0 +1,115 @@
+:root {
+
+    --white: #f5f3f5;
+    --green: #35d365;
+    --darkblue: #0d0630;
+    
+    }
+
+.container {
+    background-image: linear-gradient(to bottom, #f5f3f5, #f5f3f5, rgba(246, 244, 246, 0.3));
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.col-md-12 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.form-control {
+    text-align: left;
+    margin-bottom: 2%;
+    margin-top: 8%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.input-group {
+    text-align: center;
+    display: block;
+}
+
+.input-group .form-control {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: black;
+    --bs-btn-active-bg: #0d0630;
+}
+
+.btn-secondary:hover {
+    background-color: var(--darkblue);
+}
+
+.btn-primary {
+    border: 0.5%;
+    border-color: black;
+    background-color: var(--white);
+    color: black;
+    margin-top: 2%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    --bs-btn-active-bg: hwb(138 50% 17%);
+    --bs-btn-active-border-color: #0d0630;
+    --bs-btn-active-color: black;   
+}
+
+.btn-primary:hover {
+    background-color: var(--green);
+    color: black;
+    border-color: black;
+    transition: all 0.2s;
+    
+}
+
+.dropdown-container {
+    width: 100%;
+    margin: 0;
+}
+
+.input-group .form-select {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.checkbox-label {
+    font-weight: 500;
+}
+
+.dropdown-label {
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    .form-check-input {
+        margin-top: 6%;
+    }
+
+    .checkbox-label {
+        margin-top: 5%;
+    }
+
+    .dropdown-label {
+        margin-top: 5%;
+    }
+
+    .btn-primary {
+        margin-top: 5%;
+    }
+
+}

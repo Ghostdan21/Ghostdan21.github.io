@@ -1,0 +1,114 @@
+:root {
+
+    --white: #f5f3f5;
+    --green: #35d365;
+    --darkblue: #0d0630;
+    
+    }
+
+.col-md-2{
+    background-color: var(--white);
+    margin-top: 3%;
+}
+
+.row {
+    margin-bottom: 2%;
+    
+}
+
+.col-md-2 a {
+   margin-left: 10%;
+   margin-top: 5%;
+   margin-bottom: 10%;
+   text-decoration: none;
+   font-weight: 500;
+   color: black;
+}
+       
+
+
+.col-md-9 {
+    margin-top: 2%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 2%;
+}
+
+#carouselArticles img {
+    text-align: center;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+
+.carousel-control-prev {
+    margin-left: 20%;
+}
+
+.carousel-control-next {
+    margin-right: 20%;
+}
+
+.carousel-caption p,h5 {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.1s ease-in-out;
+}
+
+.carousel-caption:hover {
+    transition: all 0.1s ease-in-out;
+    color: var(--green);
+}
+
+.list-group-item {
+    background-color: var(--white);
+    border: none;
+    padding-top: 5%;
+}
+
+.list-group-item a {
+    font-style: italic;
+    transition: all 1s ease-in-out;
+}
+
+
+.allArticles a {
+    font-style: normal;
+    font-size: large;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.articleLink a:hover {
+    transition: all 0.5s ease-in-out;
+    padding-left: 2%;
+    color: var(--green);
+}
+
+@media screen and (max-width: 600px) {
+
+    .carousel-item img {
+        width: 90%;
+    }
+
+    .carousel-caption h5 {
+        font-size: large;
+        margin-bottom: 2%;
+    }
+
+    .carousel-caption p {
+        font-size: small;
+        margin-bottom: 2%;
+    }
+
+    .carousel-control-next {
+        margin-right: 10%;
+    }
+
+    .carousel-control-prev {
+        margin-left: 10%;
+    }
+
+}

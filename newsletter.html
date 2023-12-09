@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tech Today - Newsletter</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/newsletter_style.css">
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <a class="navbar-brand" href="index.html"><img src="images/Tech Today Logo.jpeg" alt="Tech Today Logo"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"><img src="images/house.png" alt="house icon" class="d-inline-block align-text-top">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="articles.html"><img src="images/newspaper.png" alt="newspaper icon" class="d-inline-block align-text-top">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="newsletter.html"><img src="images/envelope.png" alt="envelope icon" class="d-inline-block align-text-top">Newsletter</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!--Signup Box-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Sign up to Our Newsletter!</h2>
+          <form action="#" id="form">
+            <div class="input-group">
+              <!--Email input box-->
+              <input type="text" id="email" class="form-control" placeholder="Enter your email">
+              <span class="indicator"></span>
+              <!--Checkbox-->
+              <input type="checkbox" id="checkbox" class="form-check-input float-none" value="" >
+              <label class="checkbox-label" for="checkbox">Yes I want to recieve Special Offers</label>
+              <!--Categories List-->
+              <div class="dropdown-container">
+                <label class="dropdown-label" for="dropdown">What type of email do you want to recieve?</label>
+                <select id="dropdown" class="form-select dropdown" aria-label="Categories list">
+                  <option selected>All</option>
+                  <option value="1">Hardware</option>
+                  <option value="2">Software</option>
+                  <option value="3">Website Updates</option>
+                  <option value="4">Company Updates</option>
+                </select>
+              </div>
+              <!--Submit Button-->
+              <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" type="submit" onclick="validate()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="scripts/newsletter_scripts.js"></script>
+  </body>
+</html>
